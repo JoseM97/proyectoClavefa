@@ -1,0 +1,479 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#volar{
+    padding: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 0;
+}
+
+body{
+    width: 100%;
+}
+
+main{
+    margin: 4rem;
+    margin-top: 10rem;
+    padding-top: 5rem;
+}
+
+main > section{
+    width: 100%;
+}
+
+main > section > div{
+    width: 100%;
+}
+
+div#cabecera{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid black 1px;
+    align-items: center;
+}
+
+div#iconoscabecera{
+    display: flex;
+    flex-flow: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+div#iconoscabecera > form > button, .paraBotones{
+    border: 0;
+    background-color: transparent;
+}
+
+div#iconoscabecera > form > button > img{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    padding: 15px;
+    margin-top: 55rem;
+    background-color: #ececec;
+}
+
+footer.largo{
+    margin-top: 10rem;
+}
+
+footer > div{
+    width: 100%;
+}
+
+footer > div > div{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer > div > div#horario, footer > div > div#copy{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+footer > div > div#iconosfooter{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+footer > div > div#iconosfooter > a{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+footer > div > div#iconosfooter > a > img{
+    width: 50px;
+    height: 50px;
+}
+
+footer > div > div#enlacesfooter > p{
+    font-size: 20px;
+    font-weight: bold
+}
+
+footer > div > div#copy > p{
+    font-size: 20px;
+}
+
+nav.menudesplegado{
+    position: fixed;
+    left: -80rem;
+    top: 17rem;
+    transition: left 1s;
+
+    display: block;
+    width: 100%;
+    height: 250vh;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+nav.menudesplegado > ul{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 20rem;
+}
+
+nav.menudesplegado > ul > li{
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: .5rem;
+    margin-top: 2rem;
+    margin-left: -1.3rem;
+}
+
+nav.menudesplegado > ul > li > form > button{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 40px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+input#menu:checked ~ nav.menudesplegado{
+    left: 0;
+}
+
+input#menu, input.ocul{
+    display: none;
+}
+
+/*-----------------*/
+
+picture{
+    width: 100%;
+}
+
+.ima{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article > div{
+    display: flex;
+}
+
+.produ{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.produ > div{
+    background-color: #ececec;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.card{
+    margin-left: 5px;
+    order: 1;
+}
+
+.buscar{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+
+.espacio{
+    margin-top: 5rem;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+article.espacio > div{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.espacio > h2{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+article.espacio > div > form > div{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border: solid black 1px;
+}
+
+article.espacio > div > form > div.formbajobtn{
+    display: flex;
+    flex-flow: nowrap;
+    justify-self: right;
+    border: none;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+article.espacio > div > form > div.formbajobtn > input{
+    font-size: 30px;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+article.espacio > div > form > div > div{
+    margin: 3rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+}
+
+article.espacio > div > form > div > div > label{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+article.espacio > div > form > div > div > input, article.espacio > div > form > div > div > select{
+    width: 100%;
+    height: 2.2rem;
+    margin-bottom: 10px;
+}
+
+#destacados{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+div.retener{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.retener2{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.retener2 > div.imagenItem{
+    width: 70%;
+}
+
+.retener2 > div.imagenItem > img{
+     width: 100%;
+     height: auto;
+}
+
+.retener2 > div.datosItem{
+    width: 50%;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    border-left: 1px solid rgb(179, 179, 179);
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+div.retener > div{
+    margin: .5rem;
+}
+
+article.espacioItem{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+article.espacioItem > h2{
+    font-size: 40px;
+}
+
+.retener > div.imagenItem{
+    width: 70%;
+}
+
+.retener > div.imagenItem > img{
+    width: 100%;   
+}
+
+.retener > div.datosItem{
+    width: 50%;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    border-left: 1px solid rgb(179, 179, 179);
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.datosItem > form > p{
+    margin: 1rem;
+}
+
+.datosItem > form > h5{
+    font-size: 30px;
+}
+
+.soloTexto{
+    margin-bottom: 5rem;
+}
+
+.btnIma{
+    background-color: transparent;
+    border: 0px;
+}
+
+@media (min-width:1000px){
+
+    nav.menudesplegado{
+        position: fixed;
+        left: -80rem;
+        top: 17rem;
+        transition: left 1s;
+    
+        display: block;
+        width: 50%;
+        height: 250vh;
+        z-index: 5;
+        background-color: #ffffff;
+    }
+}
+
+@media (min-width:1500px){
+
+    nav.menudesplegado{
+        position: fixed;
+        left: -80rem;
+        top: 13rem;
+        transition: left 1s;
+    
+        display: block;
+        width: 27%;
+        height: 250vh;
+        z-index: 5;
+        background-color: #ffffff;
+    }
+
+    div#cabecera{
+        display: flex;
+        flex-flow: row;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: solid black 1px;
+    }
+
+    div#cabecera > label > span > img{
+        width: 70px;
+        height: 70px;
+    }
+    
+    div#iconoscabecera{
+        display: flex;
+        flex-flow: row;
+        margin-top: 5px;
+        justify-content: right;
+    }
+    
+    div#iconoscabecera > form > button, .paraBotones{
+        border: 0;
+        background-color: transparent;
+        margin-left: 5rem;
+    }
+    
+    div#iconoscabecera > form > button > img{
+        width: 70px;
+        height: 70px;
+    }
+
+    #destacados{
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: left;
+        border-top: 1px solid black;
+        padding-top: 2rem;
+    }
+
+    footer{
+        padding: 15px;
+        margin-top: 5rem;
+        background-color: #ececec;
+    }
+
+    article.espacio > div > form{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    article.espacio > div > form > div{
+        margin-left: 25%;
+        width: 50%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        border: solid black 1px;
+    }
+
+    div.retener{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    footer{
+        margin-top: 10rem;
+    }
+
+    div.retener2{
+        width: 100%;
+        display: flex;
+        flex-flow: nowrap;
+    }
+
+    .retener2 > div.imagenItem > img{
+        width: 500px;
+        height: auto;
+   }
+
+    .retener2 > div.imagenItem{
+        width: 50%;
+    }
+}
